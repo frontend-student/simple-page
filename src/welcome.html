@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Welcome page</title>
+</head>
+<body>
+    <main class="w-full h-[100vh] bg-blue-600 flex justify-center items-center">
+
+        <div class="w-[360px] h-[100%] bg-white flex flex-col rounded-md">
+
+            <div class="md:hidden">
+                <div class="box flex justify-between w-[100%] h-5 "><span class="mt-1 ml-4 ">9:41</span>
+                    <div class="flex mt-1 mr-4 ">
+                     <img src="../photos/icons8-signal-50.png" alt="" class="m">
+                     <img src="../photos/icons8-wifi-30.png" alt="" class="px-1">
+                     <img src="../photos/icons8-phone-battery-30.png" alt="" class="">
+                    </div>
+                 </div>
+            </div>
+
+
+<div class="max-md:text-left text-center pl-2 mt-5 font-medium text-1 ">Welcome Back</div>
+
+<div class="mt-5 mx-2">  
+    <input type="email" id="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5 " placeholder="Email" required />
+ </div>
+
+ <div class="mt-5 mx-2 flex items-center relative ">  
+    <input type="password" id="pass" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5 " placeholder="password" required  />
+    <i class="fa fa-eye-slash absolute right-3 cursor-pointer" id="eye"></i>
+    
+    
+  </div>
+
+<p class="mt-5 mx-2 text-sm text-gray-500 underline">Forgot your password?</p>
+
+
+
+<div class="mx-2">
+    <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-3.5 mt-16  w-[100%] dark "
+  
+    style="background-color: #c4dfea;
+    background-image: linear-gradient(135deg, #c4dfea 0%, #5c60d1 100%);
+    "
+      >Sign In</button>
+</div>
+
+
+<div class="relative mt-4 before:absolute before:w-[42%] text-sm before:h-[0.9px] before:top-[50%] before:left-2 before:bg-black  after:absolute after:w-[42%] after:h-[0.9px] after:top-[50%] after:right-2 after:bg-black text-center">Or</div>
+
+
+<div class="flex items-center justify-center  dark:bg-gray-800 gap-2 my-4">
+    <button class="px-4 py-4 border flex gap-2 border-slate-200  rounded-lg text-slate-700 hover:border-slate-400 dark:hover:border-slate-500 hover:text-slate-900  hover:shadow transition duration-150">
+        <img class="w-6 h-6" src="https://www.svgrepo.com/show/475656/google-color.svg" loading="lazy" alt="google logo">
+    </button>
+   
+    <button class="px-4 py-4 border flex gap-2 border-slate-200  rounded-lg text-slate-700 hover:border-slate-400 dark:hover:border-slate-500 hover:text-slate-900  hover:shadow transition duration-150">
+        <img class="w-6 h-6" src="../photos/facebook-svgrepo-com (1).png" loading="lazy" alt="google logo">
+    </button>
+
+    
+</div>
+
+ <div class="text-center text-sm">
+    <span class="underline">Don't have an account yet?</span> <span class="border-b-[0.9px] text-blue-500 border-blue-500"><a href="#">Create an account</a></span>
+ </div>
+    </main>
+
+
+
+<script>
+var x= document.querySelector('#pass');
+document.querySelector('#eye').addEventListener('click',function(){
+if (x.type=="password") {
+    x.type="text"
+this.classList.add("fa-eye")
+this.classList.remove("fa-eye-slash")
+
+} else {
+  x.type="password"
+    this.classList.remove("fa-eye")
+    this.classList.add("fa-eye-slash")
+    
+}
+
+})
+</script>
+
+
+</body>
+</html>
